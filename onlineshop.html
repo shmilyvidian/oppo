@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>onlineshop</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/page-commonStyle.css">
+	<link rel="stylesheet" href="styles/online-style.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/onlineJS.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="wrapper">	
+				<ul class="header-top-left">
+					<li><a href="#">社区</a></li>
+					<li><a href="#">ColorOS</a></li>
+					<li><a href="#">软件商店</a></li>
+					<li><a href="#">手机助手</a></li>
+					<li><a href="#">云服务</a></li>
+				</ul>
+				<div class="header-top-right">
+					<div class="search" id="search">
+						<a href="#"><i></i></a>
+					</div>
+					<ul class="login">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+					<div class="global" id="global">
+						<a href="#">Global</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-box" id="search-box">
+			<div class="wrapper">
+				<form action="">
+					<input type="text" placeholder="搜索OPPO商品"><input type="submit" value="搜索">
+				</form>
+			</div>
+		</div>
+		<div class="global-box" id="global-box">
+			<div class="wrapper">
+				<h3>Select your country or region</h3>
+				<ul>
+					<li><a href="#">Algérie</a></li>
+					<li><a href="#">Australia</a></li>
+					<li><a href="#">Bangladesh</a></li>
+					<li><a href="#">Egypt</a></li>
+					<li><a href="#">Global</a></li>
+					<li><a href="#">India</a></li>
+					<li><a href="#">Indonesia</a></li>
+					<li><a href="#">Kenya</a></li>
+					<li><a href="#">Malaysia</a></li>
+					<li><a href="#">Maroc</a></li>
+					<li><a href="#">México</a></li>
+					<li><a href="#">Nigeria</a></li>
+					<li><a href="#">Pakistan</a></li>
+					<li><a href="#">Philippines</a></li>
+					<li><a href="#">Singapore</a></li>
+					<li><a href="#">Sri Lanka</a></li>
+					<li><a href="#">台灣</a></li>
+					<li><a href="#">UAE</a></li>
+					<li><a href="#">Việt Nam</a></li>
+					<li><a href="#">ประเทศไทย</a></li>
+					<li><a href="#">Myanmar</a></li>
+					<li><a href="#">中国</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<h1>
+					<a href="#">
+						<img src="images/products/oppo_logo.png" alt="oppo">
+					</a>     
+				</h1>
+
+				<ul id="header-bottom-active">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="product.html">产品</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li id="li-3"><a href="onlineshop.html">在线商城</a></li>
+					<li><a href="experienceshop.html">体验店</a></li>
+					<li><a href="service.html">服务</a></li>
+					<li class="shop-cart">
+						<a href="javascript:;">
+							<span>购物车</span>
+							<span class="icon icon-cart"></span>
+							<span class="icon icon-num">0</span>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+			<div id="onlineshop">
+				<i></i>
+				<ul class="onlineshop">
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">购物指南</a></li>
+					<li><a href="#">积分商城</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<ul class="supports">
+			<li><a href="index.html">首页<span>/</span></a></li>
+			<li>在线购买</li>
+		</ul>
+	</div>
+	<div class="online-banner">
+		<div class="banner-box" id="online-banner">
+			<a href="#"><img src="images/banner-1.jpg" alt=""></a>
+			<a href="#"><img src="images/banner-2.jpg" alt=""></a>
+			<a href="#"><img src="images/banner-3.jpg" alt=""></a>
+		</div>
+		<a href="#" class="online-banner-prev" id="online-prev"></a>
+		<a href="#" class="online-banner-next" id="online-next"></a>
+		<ol class="online-banner-switch" id="online-switch">
+			<li class="switchActive">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ol>
+		
+	</div>
+	<div class="wrapper">
+		<div class="badge">
+			<div class="badge-icon"><span class="badge-icon-1"></span></div>
+			<div class="badge-text">
+				<h5>正品保障</h5>
+				<p>所有产品都是原装正品</p>
+			</div>
+		</div>
+		<div class="badge">
+			<div class="badge-icon"><span class="badge-icon-2"></span></div>
+			<div class="badge-text">
+				<h5>79元起包邮</h5>
+				<p>高效的物流直达配送</p>
+			</div>
+		</div>
+		<div class="badge">
+			<div class="badge-icon"><span class="badge-icon-3"></span></div>
+			<div class="badge-text">
+				<h5>7天退换货</h5>
+				<p>支持7天退货，30天换货</p>
+			</div>
+		</div>
+		<div class="badge">
+			<div class="badge-icon"><span class="badge-icon-4"></span></div>
+			<div class="badge-text">
+				<h5>2800家体验店</h5>
+				<p>轻松自在，覆盖各大城市</p>
+			</div>
+		</div>
+		<div class="special-product">
+			<div class="left">
+				<a href="#" class="left-1">
+					<img src="images/onlineshop/left-1.jpg" alt="更多爆款手机">
+					<div class="left-text">
+						<h1>更多爆款手机</h1>
+						<p>立即查看</p>
+					</div>
+				</a>
+				<div class="left-2">
+					<a href="#"><img src="images/onlineshop/left-2.jpg" alt="R7s 4G"></a>
+					<div class="left-intro">
+						<h2><a href="#">R7s 全网通4G版</a></h2>
+						<a>查看详情</a>
+					</div>
+				</div>
+				<i class="new-product new-icon"></i>
+			</div>
+			<div class="right">
+				<div class="right-1">
+					<h2>R7s 长续航闪充利器</h2>
+					<p>&yen;2599.00</p>
+				</div>
+				<a href="#"><img src="images/onlineshop/right.jpg" alt="R7s 长续航闪充利器"></a>
+			</div>
+		</div>
+		<div class="badge-all">
+			<div class="badge-product badge-product-one">
+				<a href="#"><img src="images/onlineshop/pro-1.jpg" title="R7 Plus移动版 全金属续航大咖 金色"></a>
+				<h2><a href="#">R7 Plus 全金属续航大咖</a></h2>
+				<strong>&yen;2999.00</strong>
+				<i class="baokuan new-icon"></i>
+			</div>
+			<div class="badge-product badge-product-two">
+				<a href="#"><img src="images/onlineshop/pro-2.jpg" title="R7 全金属闪拍万人迷"></a>
+				<h2><a href="#">R7 全金属闪拍万人迷</a></h2>
+				<p>&yen;2499.00</p>
+				<strong>&yen;2999.00</strong>
+				<i class="baokuan new-icon"></i>
+			</div>
+			<div class="badge-product badge-product-three">
+				<a href="#"><img src="images/onlineshop/pro-3.jpg" title="R1C 钻石流光镜面"></a>
+				<h2><a href="#">R1C 钻石流光镜面</a></h2>
+				<p>&yen;1799.00</p>
+				<strong>&yen;1599.00</strong>
+				<i class="baokuan new-icon"></i>
+			</div>
+			<div class="badge-product badge-product-four">
+				<a href="#"><img src="images/onlineshop/pro-4.jpg" title="N1mini 1300万旋转趣拍"></a>
+				<h2><a href="#">N1mini 1300万旋转趣拍</a></h2>
+				<p>&yen;2299.00</p>
+				<strong>&yen;1999.00</strong>
+				<i class="cuxiao new-icon"></i>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			<div class="footer-important">
+				<div class="footer-important-one"><a href="#"><i>OPPO社区图</i><span>OPPO社区</span></a></div>
+				<div class="footer-important-two"><a href="#"><i>ColorOS图</i><span>ColorOS</span></a></div>
+				<div class="footer-important-three"><a href="#"><i>软件商店图</i><span>软件商店</span></a></div>
+			</div>
+			<div class="footer-sitemap">
+				<dl class="footer-sitemap-one">
+					<dt><a href="#">推荐机型</a></dt>
+					<dd><a href="#">R7</a></dd>
+					<dd><a href="#">N3</a></dd>
+					<dd><a href="#">Find 7</a></dd>
+					<dd><a href="#">R1C</a></dd>
+					<dd><a href="#">N1 mini</a></dd>
+				</dl>
+				<dl class="footer-sitemap-two">
+					<dt><a href="#">在线购买</a></dt>
+					<dd><a href="#">手机</a></dd>
+					<dd><a href="#">配件</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">积分商城</a></dd>
+				</dl>
+				<dl class="footer-sitemap-three">
+					<dt><a href="#">服务</a></dt>
+					<dd><a href="#">购买帮助</a></dd>
+					<dd><a href="#">物流查询</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">服务政策</a></dd>
+					<dd><a href="#">服务网点查询</a></dd>
+				</dl>
+				<dl class="footer-sitemap-four">
+					<dt><a href="#">会员相关</a></dt>
+					<dd><a href="#">会员登录</a></dd>
+					<dd><a href="#">会员注册</a></dd>
+					<dd><a href="#">积分兑换</a></dd>
+				</dl>
+				<dl class="footer-sitemap-five">
+					<dt><a href="#">OPPO品牌</a></dt>
+					<dd><a href="#">关于OPPO</a></dd>
+					<dd><a href="#">资讯</a></dd>
+					<dd><a href="#">摄影作品</a></dd>
+					<dd><a href="#">我们的视频</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="fullscreen">
+			<div class="footer-services">
+				<dl class="footer-services-focus focus-join">
+					<dt>关注我们</dt>
+					<dd><a href="#" class="weibo">微博</a></dd>
+					<dd><a href="#" class="weixin">微信</a><div class="weixinpic"></div></dd>
+				</dl>
+				<dl class="footer-services-join focus-join">
+					<dt>加入我们</dt>
+					<dd><a href="#">加入我们</a></dd>
+				</dl>
+				
+				<dl class="footer-services-phone right phonecall">
+					<dt>4001-666-888</dt>
+					<dd>7*24小时客服电话</dd>
+				</dl>
+				<div class="footer-services-phonepic right">
+					<i href="#">客服电话图</i>
+				</div>
+				
+				<dl class="footer-services-online right phonecall">
+					<dt><a href="#">在线客服<i></i></a></dt>
+					<dd><a href="#">人工服务：8:30~22:00</a></dd>
+					<dd><a href="#">24小时智能机器人服务</a></dd>
+				</dl>
+				<div class="footer-services-onlinepic right">
+					<a href="#">在线客服图</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-version">
+			<p>&copy;2005 - 2015 东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1</p>
+		</div>
+	</footer>
+	<div class="right-bottom" id="right-bottom">
+		<a href="javascript:;"><span>回到顶部</span><i class="backtoTop"></i></a>
+		<a href="wenjuan.html"><span>意见反馈</span><i class="advice"></i></a>
+	</div>
+	<div class="purchase-help">
+		<a href="#">购机咨询</a>
+	</div>
+</body>
+</html>

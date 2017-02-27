@@ -1,0 +1,61 @@
+/*banner*/
+
+.banner{margin-top: 4px;position: relative;width: 100%;height: 525px;overflow: hidden;}
+.banner-picture{height: 525px;position: relative;left: 0;top: 0;width: 100%;}
+.banner-picture li{/* display: block; */width: 100%;float: left;position: absolute;left: 0;top: 0; display: none; }
+.banner-picture li:first-child{z-index: 4; display: block;}
+.banner-picture li:nth-child(1){z-index: 3;}
+.banner-picture li:nth-child(2){z-index: 2;}
+.banner-picture li:last-child{z-index: 1;}
+.banner-picture li a{display: block;height: 525px;text-indent: -9000px;width: 100%;}
+.banner-picture-one{background: url(../images/banner-1.jpg) center center no-repeat;}
+.banner-picture-two{background: url(../images/banner-2.jpg) center center no-repeat;}
+.banner-picture-three{background: url(../images/banner-3.jpg) center center no-repeat;}
+.banner-picture-four{background: url(../images/banner-4.jpg) center center no-repeat;}
+.banner>a{width: 40px;height: 70px;display: inline-block;position: absolute;top: 40%;z-index: 5;}
+.banner>a:hover{opacity: .5;}
+.banner-prev{background: url(../images/products/sprite-icons.png) 0 -149px;left: 3%;}
+.banner-next{background: url(../images/products/sprite-icons.png) 0 -72px;right: 3%;}
+.banner-switch{position: absolute;bottom: 20px;left: 45%;z-index: 5;}
+.banner-switch li.switchActive{border: 2px solid #2AAD6F;background: #fff;}
+.banner-switch li{width: 12px;height: 12px;border-radius: 50%;background: #7b7b7b;text-indent: -9000px;
+	display: inline-block;margin-right: 10px;border:2px solid #7b7b7b;}
+.banner-switch li:hover{border: 2px solid #2AAD6F;background: #fff; }
+/*feature-product*/
+.feature-product{width: 1180px;margin: 100px auto;}
+.feature-product a:first-child{margin-right: 50px;}
+/*section*/
+.section{width: 1180px;margin: 100px auto;}
+section{display: inline-block;margin-right: 50px;vertical-align: top;}
+section h2{color: #1F8657;font-weight: bold;font-size: 18px;}
+section h3{color: #393939;font-weight: bold;margin: 20px 0 30px;}
+section .img a img{height: 285px;}
+section article .ar{width: 85px;display: inline-block;}
+section article .ar a{display: inline-block;width: 85px;height: 85px;margin-bottom: 10px;}
+section article .p{display: inline-block;vertical-align: top;}
+section article p{border-bottom: 1px solid #ccc;width: 270px;height: 94px;}
+section article p a{color: #1f8657;padding-top: 10px;display: inline-block;}
+section article .ar-one{background: url(../images/section-two-1.jpg);}
+section article .ar-two{background: url(../images/section-two-2.jpg);}
+section article .ar-three{background: url(../images/section-two-3.jpg);}
+/*list-access*/
+.list-access{width: 100%;background:#ededed;padding: 60px 0;}
+.list-access-content{width: 1200px;margin: 0px auto;height: 300px;border-bottom:5px solid #2AAD6F;}
+.content{float: left;}
+.content a{position: relative;}
+.content a:hover .mask-icon{background: #fff;}
+.content a:hover .mask-icon-1{background: url(../images/products/sprite-icons.png) -82px -157px;}
+.content a:hover .mask-icon-2{background: url(../images/products/sprite-icons.png) -82px -191px;}
+.content a:hover .mask-icon-3{background: url(../images/products/sprite-icons.png) -82px -234px;}
+.content a:hover .mask-icon-4{background: url(../images/products/sprite-icons.png) -82px -279px;}
+.content img{width: 300px;height: 300px;}
+.list-access .mask{position: absolute;left: 30%;top: -240px;width: 120px;margin: 0 auto;}
+.list-access .mask h3{text-align: center;font-weight: bold;font-size: 22px;color: #fff;margin-bottom:30px;}
+.list-access .mask-icon{background: #2AAD6F;border-radius: 50%;width: 120px;height: 120px;text-align: center;}
+.list-access .mask-icon span{display: inline-block;width: 36px;margin-top: 40px;}
+.list-access-content-3 .mask{width: 135px;}
+.list-access-content-3 .mask .mask-icon{margin-left: 8px;}
+.mask-icon-1{background: url(../images/products/sprite-icons.png) -82px 0;height: 30px;}
+.mask-icon-2{background: url(../images/products/sprite-icons.png) -82px -32px;height: 36px;}
+.mask-icon-3{background: url(../images/products/sprite-icons.png) -82px -75px;height: 36px;}
+.mask-icon-4{background: url(../images/products/sprite-icons.png) -82px -120px;height: 30px;}

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>product</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/page-commonStyle.css">
+	<link rel="stylesheet" href="styles/experienceshop-style.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/shopJS.js"></script>
+	<script src="http://api.map.baidu.com/api?v=1.3" type="text/javascript"></script>
+	<script src="js/map.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="wrapper">	
+				<ul class="header-top-left">
+					<li><a href="#">社区</a></li>
+					<li><a href="#">ColorOS</a></li>
+					<li><a href="#">软件商店</a></li>
+					<li><a href="#">手机助手</a></li>
+					<li><a href="#">云服务</a></li>
+				</ul>
+				<div class="header-top-right">
+					<div class="search" id="search">
+						<a href="#"><i></i></a>
+					</div>
+					<ul class="login">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+					<div class="global" id="global">
+						<a href="#">Global</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-box" id="search-box">
+			<div class="wrapper">
+				<form action="">
+					<input type="text" placeholder="搜索OPPO商品"><input type="submit" value="搜索">
+				</form>
+			</div>
+		</div>
+		<div class="global-box" id="global-box">
+			<div class="wrapper">
+				<h3>Select your country or region</h3>
+				<ul>
+					<li><a href="#">Algérie</a></li>
+					<li><a href="#">Australia</a></li>
+					<li><a href="#">Bangladesh</a></li>
+					<li><a href="#">Egypt</a></li>
+					<li><a href="#">Global</a></li>
+					<li><a href="#">India</a></li>
+					<li><a href="#">Indonesia</a></li>
+					<li><a href="#">Kenya</a></li>
+					<li><a href="#">Malaysia</a></li>
+					<li><a href="#">Maroc</a></li>
+					<li><a href="#">México</a></li>
+					<li><a href="#">Nigeria</a></li>
+					<li><a href="#">Pakistan</a></li>
+					<li><a href="#">Philippines</a></li>
+					<li><a href="#">Singapore</a></li>
+					<li><a href="#">Sri Lanka</a></li>
+					<li><a href="#">台灣</a></li>
+					<li><a href="#">UAE</a></li>
+					<li><a href="#">Việt Nam</a></li>
+					<li><a href="#">ประเทศไทย</a></li>
+					<li><a href="#">Myanmar</a></li>
+					<li><a href="#">中国</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<h1>
+					<a href="#">
+						<img src="images/products/oppo_logo.png" alt="oppo">
+					</a>     
+				</h1>
+				<ul id="header-bottom-active">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="product.html">产品</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li id="li-3"><a href="onlineshop.html">在线商城</a></li>
+					<li><a href="experienceshop.html">体验店</a></li>
+					<li><a href="service.html">服务</a></li>
+				</ul>
+			</div>
+			<div id="onlineshop">
+				<i></i>
+				<ul class="onlineshop">
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">购物指南</a></li>
+					<li><a href="#">积分商城</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="shop-content">
+		<div class="wrapper">
+			<ul class="supports">
+				<li><a href="index.html">首页<span>/</span></a></li>
+				<li>体验店</li>
+			</ul>
+		</div>
+		<div class="shop-image">
+			<img src="images/shop/shop-1.jpg" alt="体验店">
+			<div class="shop-form">
+				<form action="">
+					<input type="text" placeholder="请输入城市或体验店名称" />
+					<button>搜索</button>
+				</form>
+			</div>
+		</div>
+		<div class="wrapper select-box">
+			<span class="title">请选择查询的城市：</span>
+			<div class="select">
+				<span class="select-icon"></span>
+				<select name="provice" id="provice">
+					<option value="">请选择省份</option>
+				</select>
+			</div>
+			<div class="select">
+				<span class="select-icon"></span>
+				<select name="city" id="city">
+					<option value="">请选择城市</option>
+				</select>
+			</div>
+		</div>
+		<div class="shop-address">
+			<div class="wrapper">
+				<div class="map">
+					<div class="map-left">
+						<p class="one"><a href="#"></a>体验店</p>
+						<div class="map-content" id="map_canvas"></div>
+					</div>
+					<aside>
+						<h2>体验店服务</h2>
+						<ul class='icon-list shops-icons'>
+			                <li><span class='icons-shops icon-shop-hyjf'></span>会员积分</li>
+			                <li><span class='icons-shops icon-shop-hyzsjg'></span>会员专属价格</li>
+			                <li><span class='icons-shops icon-shop-sjtm'></span>手机贴膜</li>
+			                <li><span class='icons-shops icon-shop-yyrjxz'></span>应用软件下载</li>
+			                <li><span class='icons-shops icon-shop-gjsj'></span>固件升级</li>
+			                <li><span class='icons-shops icon-shop-coloros'></span>ColorOS</li>
+			                <li><span class='icons-shops icon-shop-jkybf'></span>剪卡、云备份</li>
+			                <li><span class='icons-shops icon-shop-gnjx'></span>功能教学</li>
+			                <li><span class='icons-shops icon-shop-sjjyz'></span>手机加油站</li>
+			                <li><span class='icons-shops icon-shop-wificl'></span>WIFI冲浪</li>
+			                <li><span class='icons-shops icon-shop-axs'></span>爱心伞</li>
+			                <li><span class='icons-shops icon-shop-sx'></span>送修</li>
+			                <li><span class='icons-shops icon-shop-xoms'></span>小欧秘书</li>
+			              </ul>
+					</aside>
+				</div>
+				<div class="address">
+				<h3> 南昌市 · 体验店（7）</h3>
+				<ul>
+					<li>
+						<span>1</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌新建解放路店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市新建县解放路新时代广场对面</p>
+							<p>18970861062</p>
+						</div>
+					</li>
+					<li>
+						<span>2</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌八一大道万达店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市东湖区八一大道万达购物广场</p>
+							<p>0791-82201822</p>
+						</div>
+					</li>
+					<li>
+						<span>3</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌八一大道交通运输厅店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市西湖区八一大道交通运输厅旁</p>
+							<p>0791-86176508</p>
+						</div>
+					</li>
+					<li>
+						<span>4</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌八一大道电信大楼店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市东湖区八一大道电信大楼东面</p>
+							<p>0791-86229602</p>
+						</div>
+					</li>
+					<li>
+						<span>5</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌八一广场北店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市东湖区八一大道335号移动大厅（旁）北面</p>
+							<p>0791-87910115</p>
+						</div>
+					</li>
+					<li>
+						<span>6</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌象山路百盛旗舰店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市东湖区象山北路43号（百盛商场北面）</p>
+							<p>0791-87893906</p>
+						</div>
+					</li>
+					<li>
+						<span>7</span>
+						<div class="address-content">
+							<div class="one">
+								<p><strong>南昌八一大道长运店</strong></p>
+								<a href="#" class="details">查看详情</a>
+							</div>
+							<p>江西省南昌市西湖区八一大道229号长运汽车站旁（北面）</p>
+							<p>18870028520</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		
+	</div>
+	<footer>
+		<div class="wrapper">
+			<div class="footer-important">
+				<div class="footer-important-one"><a href="#"><i>OPPO社区图</i><span>OPPO社区</span></a></div>
+				<div class="footer-important-two"><a href="#"><i>ColorOS图</i><span>ColorOS</span></a></div>
+				<div class="footer-important-three"><a href="#"><i>软件商店图</i><span>软件商店</span></a></div>
+			</div>
+			<div class="footer-sitemap">
+				<dl class="footer-sitemap-one">
+					<dt><a href="#">推荐机型</a></dt>
+					<dd><a href="#">R7</a></dd>
+					<dd><a href="#">N3</a></dd>
+					<dd><a href="#">Find 7</a></dd>
+					<dd><a href="#">R1C</a></dd>
+					<dd><a href="#">N1 mini</a></dd>
+				</dl>
+				<dl class="footer-sitemap-two">
+					<dt><a href="#">在线购买</a></dt>
+					<dd><a href="#">手机</a></dd>
+					<dd><a href="#">配件</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">积分商城</a></dd>
+				</dl>
+				<dl class="footer-sitemap-three">
+					<dt><a href="#">服务</a></dt>
+					<dd><a href="#">购买帮助</a></dd>
+					<dd><a href="#">物流查询</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">服务政策</a></dd>
+					<dd><a href="#">服务网点查询</a></dd>
+				</dl>
+				<dl class="footer-sitemap-four">
+					<dt><a href="#">会员相关</a></dt>
+					<dd><a href="#">会员登录</a></dd>
+					<dd><a href="#">会员注册</a></dd>
+					<dd><a href="#">积分兑换</a></dd>
+				</dl>
+				<dl class="footer-sitemap-five">
+					<dt><a href="#">OPPO品牌</a></dt>
+					<dd><a href="#">关于OPPO</a></dd>
+					<dd><a href="#">资讯</a></dd>
+					<dd><a href="#">摄影作品</a></dd>
+					<dd><a href="#">我们的视频</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="fullscreen">
+			<div class="footer-services">
+				<dl class="footer-services-focus focus-join">
+					<dt>关注我们</dt>
+					<dd><a href="#" class="weibo">微博</a></dd>
+					<dd><a href="#" class="weixin">微信</a><div class="weixinpic"></div></dd>
+				</dl>
+				<dl class="footer-services-join focus-join">
+					<dt>加入我们</dt>
+					<dd><a href="#">加入我们</a></dd>
+				</dl>
+				
+				<dl class="footer-services-phone right phonecall">
+					<dt>4001-666-888</dt>
+					<dd>7*24小时客服电话</dd>
+				</dl>
+				<div class="footer-services-phonepic right">
+					<i href="#">客服电话图</i>
+				</div>
+				
+				<dl class="footer-services-online right phonecall">
+					<dt><a href="#">在线客服<i></i></a></dt>
+					<dd><a href="#">人工服务：8:30~22:00</a></dd>
+					<dd><a href="#">24小时智能机器人服务</a></dd>
+				</dl>
+				<div class="footer-services-onlinepic right">
+					<a href="#">在线客服图</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-version">
+			<p>&copy;2005 - 2015 东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1</p>
+		</div>
+	</footer>
+	<div class="right-bottom" id="right-bottom">
+		<a href="#"><span>回到顶部</span><i class="backtoTop"></i></a>
+		<a href="wenjuan.html"><span>意见反馈</span><i class="advice"></i></a>
+	</div>
+</body>
+</html>

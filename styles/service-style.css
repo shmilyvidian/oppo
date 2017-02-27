@@ -1,0 +1,37 @@
+/*supports*/
+.supports{padding: 20px 0 15px;border-bottom: 1px solid #ccc;}
+.supports li{display: inline-block;font-size: 14px;color: #7b7b7b;}
+.supports a{color: #7b7b7b;}
+.supports span{padding: 0 10px;}
+/*service-image*/
+.service-image{width: 100%;height: 525px;position: relative;overflow: hidden;}
+.service-image ul{position: absolute;height: 525px;transform:translate(0,0);left: -1423px;}
+.service-image .ser-active{display: block;}
+.service-image li{float: left;height: 525px;overflow: hidden;/*display: none;*/width: 1423px;}
+.service-image li img{width: 100%;margin-top: -150px;}
+.service-image>a{width: 40px;height: 70px;display: inline-block;position: absolute;top: 40%;}
+.service-image>a:hover{opacity: .5;}
+.banner-prev{background: url(../images/products/sprite-icons.png) 0 -149px;left: 3%;}
+.banner-next{background: url(../images/products/sprite-icons.png) 0 -72px;right: 3%;}
+/*self-service*/
+.self-service{padding: 70px 0 50px;}
+.self-service h3{font-size: 26px;font-weight: bold;margin-bottom: 18px;margin-left: 10px;}
+.self-service ul{overflow: hidden;}
+.self-service li{float: left;height: 140px;margin-left: 10px;margin-bottom: 20px;}
+
+.help-service{}
+a{cursor: pointer;}
+.one-two{width: 558px;display: inline-block;vertical-align: top;}
+.help-service .help-left-top{border-bottom: 1px solid #e2e2e2;overflow: hidden;}
+.help-service .help-left-top h2{font-size:26px;font-weight: bold;margin-bottom:18px;display:inline-block;float:left;}
+.seemore{color: #afafaf;text-align: right;display: inline-block;float: right;padding-top: 10px;}
+.seemore:hover{text-decoration: underline;}
+.help-content{width: 558px;}
+.help-content li{font-size: 18px;padding: 25px 0;border-bottom: 1px solid #e2e2e2;}
+.help-content a{color: #393939;}
+.help-content a i{background-position: -184px -580px;background-image: url(../images/products/sprite-icons.png);
+	display: inline-block;width: 21px;height: 21px;float: right;}
+.li-content{border: 1px solid #e2e2e2;margin-top: 20px;padding:10px 0 20px; display: none;}
+.li-content p{font-size: 14px;line-height: 20px;margin-top: 10px;}
+/*span{color: rgb(42, 173, 111);}*/
+.left{margin-right: 50px;}

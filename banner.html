@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		/*banner*/
+		*{margin: 0;padding: 0;}
+.banner{margin-top: 4px;position: relative;width: 100%;height: 525px;overflow: hidden;}
+.banner-picture{height: 625px;position: absolute;left: 0;top: 0;width: 400%;/*z-index: -1;*/}
+.banner-picture li{width: 25%;float: left;}
+.banner-picture li a{display: block;height: 525px;text-indent: -9000px;width: 100%;}
+.banner-picture-one{background: url(images/banner-1.jpg) center center no-repeat;}
+.banner-picture-two{background: url(images/banner-2.jpg) center center no-repeat;}
+.banner-picture-three{background: url(images/banner-3.jpg) center center no-repeat;}
+.banner-picture-four{background: url(images/banner-4.jpg) center center no-repeat;}
+.banner>a{width: 40px;height: 70px;display: inline-block;position: absolute;top: 40%;}
+.banner>a:hover{opacity: .5;}
+.banner-prev{background: url(images/products/sprite-icons.png) 0 -149px;left: 3%;}
+.banner-next{background: url(images/products/sprite-icons.png) 0 -72px;right: 3%;}
+.banner-switch{position: absolute;bottom: 20px;left: 45%;}
+.banner-switch li.switchActive{border: 2px solid #2AAD6F;background: #fff;}
+.banner-switch li{width: 12px;height: 12px;border-radius: 50%;background: #7b7b7b;text-indent: -9000px;
+	display: inline-block;margin-right: 10px;border:2px solid #7b7b7b;}
+.banner-switch li:hover{border: 2px solid #2AAD6F;background: #fff; }
+	</style>
+
+	<script>
+	window.onload=function(){
+		var oPrev=document.getElementById('prev');
+		var oNext=document.getElementById('next');
+		var oSwitch=document.getElementById('switch');
+		var aSwitch=oSwitch.getElementsByTagName('li');
+
+		var oPic=document.getElementById('picture');
+		var aPic=oPic.getElementsByTagName('li');
+
+		var num=0;
+		var timer2=null;
+
+		oPrev.onclick=function(){
+			clearInterval(timer2);
+			if (num>0) {
+				aSwitch[num].className='';
+				num--;
+				aSwitch[num].className='switchActive';
+			}else{
+				num=aSwitch.length-1;
+				aSwitch[0].className='';
+				aSwitch[num].className='switchActive';
+			}
+			var x=oPic.offsetLeft+oPic.offsetWidth/4;
+			if (oPic.offsetLeft==0) { x=-oPic.offsetWidth/4*3;}
+			motion('picture',x,0,1);
+			timer2=setInterval(repeat,3000);
+		}
+		oNext.onclick=function(){
+			clearInterval(timer2);
+			if (num<aSwitch.length-1) {
+				aSwitch[num].className='';
+				num++;
+				aSwitch[num].className='switchActive';
+			}else{
+				num=0;
+				aSwitch[aSwitch.length-1].className='';
+				aSwitch[num].className='switchActive';
+			}
+			var x=oPic.offsetLeft-oPic.offsetWidth/4;
+			if (oPic.offsetLeft==-oPic.offsetWidth/4*3) {x=0;}		
+			motion('picture',x,0,1);
+			timer2=setInterval(repeat,3000);
+		}
+		for (var i = 0; i < aSwitch.length; i++) {
+			aSwitch[i].index=i;
+			aSwitch[i].onclick=function(){
+				clearInterval(timer2);
+				num=this.index;
+				for (var i = 0; i < aSwitch.length; i++) {
+					aSwitch[i].className='';
+				}
+				aSwitch[num].className='switchActive';
+				motion('picture',-oPic.offsetWidth/4*(this.index),0,1);
+				timer2=setInterval(repeat,3000);
+			}
+		};
+
+		function repeat(){
+			if (num<aSwitch.length-1) {
+				aSwitch[num].className='';
+				num++;
+				aSwitch[num].className='switchActive';
+			}else{
+				num=0;
+				aSwitch[aSwitch.length-1].className='';
+				aSwitch[num].className='switchActive';
+			}
+			var x=oPic.offsetLeft - oPic.offsetWidth/4;
+			if (oPic.offsetLeft==-oPic.offsetWidth/4*3) {x=0;}		
+				motion('picture',x,0,1);
+		}
+		timer2=setInterval(repeat,3000);
+		oPic.onmouseover=function(){
+			clearInterval(timer2);
+		}
+		oPic.onmouseout=function(){
+			timer2=setInterval(repeat,3000);
+		}
+	}
+
+	function motion (element,final_x,final_y,interval) {
+			var elementId=document.getElementById(element);
+			
+			var xpos=elementId.offsetLeft;
+			var ypos=elementId.offsetTop;
+
+			if(elementId.timer){
+				clearTimeout(elementId.timer);
+			}
+			var dist;
+			if (xpos<final_x) {dist=Math.ceil((final_x-xpos)/20);xpos+=dist;};
+			if (ypos<final_y) {dist=Math.ceil((final_y-ypos)/40);ypos+=dist;};
+			if (xpos>final_x) {dist=Math.ceil((xpos-final_x)/20);xpos-=dist;};
+			if (ypos>final_y) {dist=Math.ceil((ypos-final_y)/40);ypos-=dist;};
+			elementId.style.left=xpos+"px";
+			elementId.style.top=ypos+"px";
+			var repeat="motion('"+element+"',"+final_x+","+final_y+","+interval+")";
+			elementId.timer=setTimeout(repeat,interval);
+		}
+	</script>
+</head>
+<body>
+	<div class="banner">
+		<ul class="banner-picture" id="picture">
+			<li><a href="#" class="banner-picture-one">oppo R7长续航闪充利器</a></li>
+			<li><a href="#" class="banner-picture-two">oppo R7长续航闪充利器</a></li>
+			<li><a href="#" class="banner-picture-three">oppo R7长续航闪充利器</a></li>
+			<li><a href="#" class="banner-picture-four">oppo R7长续航闪充利器</a></li>
+		</ul>
+		<a href="#" class="banner-prev" id="prev"></a>
+		<a href="#" class="banner-next" id="next"></a>
+		<ol class="banner-switch" id="switch">
+			<li class="switchActive">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+	</div>
+</body>
+</html>
